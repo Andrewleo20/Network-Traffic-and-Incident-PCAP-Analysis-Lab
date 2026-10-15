@@ -1,0 +1,21 @@
+# Raw network captures
+*.pcap
+*.pcapng
+*.cap
+
+# Downloaded archives
+*.zip
+*.7z
+*.rar
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Environment and secret files
+.env
+.env.*

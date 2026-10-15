@@ -1,0 +1,10 @@
+indicator_type,indicator_value,classification,description,evidence
+IPv4,45.131.214.85,Suspicious,External NetSupport gateway destination,Frames 2638 and 2639
+URL,http://45.131.214.85/fakeurl.htm,Suspicious,Repeated HTTP POST destination,Frame 2638
+HTTP User-Agent,NetSupport Manager/1.3,Investigation Indicator,NetSupport client identification,Frame 2638
+HTTP Server,NetSupport Gateway/1.92 (Windows NT),Investigation Indicator,Remote gateway server identification,HTTP Stream 40
+Hostname,DESKTOP-TEYQ2NR,Affected Asset,Windows endpoint associated with suspicious traffic,DHCP Frame 2
+IPv4,10.2.28.88,Affected Asset,Internal IP assigned to affected endpoint,DHCP Request and ACK
+TCP Port,443,Connection Metadata,Plaintext HTTP communication over TCP port 443,Frame 2638
+HTTP Command,CMD=POLL,Investigation Indicator,Observed client polling message,HTTP Stream 40
+HTTP Command,CMD=ENCD,Investigation Indicator,Observed encoded data exchange,HTTP Stream 40
